@@ -7,8 +7,9 @@ body
     background-color: variables.$bg-light
     color: variables.$dark-blue
 
-@mixin flex($flex-direction: row)
+@mixin flex($flex-direction: row, $gap: 30px)
     display: flex
     flex-direction: $flex-direction
     justify-content: space-between
     align-items: center
+    gap: $gap
