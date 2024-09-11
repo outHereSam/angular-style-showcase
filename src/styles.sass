@@ -13,3 +13,13 @@ body
     justify-content: space-between
     align-items: center
     gap: $gap
+
+@mixin imageSizing($url: '')
+    background-image: url($url)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+
+%card-base
+    border-radius: 40px
+    color: white
