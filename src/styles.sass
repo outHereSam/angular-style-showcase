@@ -5,3 +5,10 @@
 body
     font-family: variables.$font-main
     background-color: variables.$bg-light
+    color: variables.$dark-blue
+
+@mixin flex($flex-direction: row)
+    display: flex
+    flex-direction: $flex-direction
+    justify-content: space-between
+    align-items: center
