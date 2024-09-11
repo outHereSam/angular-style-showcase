@@ -1,3 +1,10 @@
-<button class="theme">
+<button
+  [class]="themeService.theme === 'light' ? 'light' : 'dark'"
+  (click)="toggleTheme()"
+>
+  @if (themeService.theme === 'light') {
   <img src="../../../assets/moon.svg" alt="Moon" />
+  } @else {
+  <img src="../../../assets/sun.svg" alt="Sun" />
+  }
 </button>

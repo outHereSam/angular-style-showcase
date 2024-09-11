@@ -1,5 +1,5 @@
 <header>
-  <h1 class="title">Moments.</h1>
+  <h1 [class]="themeService.theme === 'light' ? 'light' : 'dark'">Moments.</h1>
 
   <app-theme-switcher />
 </header>

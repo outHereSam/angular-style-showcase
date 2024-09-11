@@ -5,7 +5,15 @@ header
     padding: 30px 24px
     @include styles.flex($flex-direction: row)
 
-    .title
+    %title
         font-size: 1.5rem
         letter-spacing: $heading-text-spacing
+        transition: 0.2s ease-in
+
+    .light
+        @extend %title
+
+    .dark
+        @extend %title
+        color: white
     
